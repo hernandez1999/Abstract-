@@ -8,6 +8,8 @@ public class Triangulo extends FiguraGeometrica {
 
     @Override
     int calcularArea() {
+        System.out.println(".: AREA TRIANGULO :. ");
+        try{
         int b;
         System.out.println("Ingrese base: ");
         b= miEscaner.nextInt();
@@ -19,8 +21,11 @@ public class Triangulo extends FiguraGeometrica {
         int a;
         a= (b*h)/2;
         
-        System.out.println("El area es:  ");
-        return a;
+        System.out.println("El area es:  "+a);
+        }catch(Exception e){
+            System.out.println("Dato no valido ");
+        }
+        return 0;
     }
 
     @Override

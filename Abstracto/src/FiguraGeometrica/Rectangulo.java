@@ -10,6 +10,7 @@ public class Rectangulo extends FiguraGeometrica {
     @Override
     int calcularArea() {
         System.out.println(".: AREA RECTANGULO :. ");
+        try{
         int b;
         System.out.println("Ingrese base: ");
         b= miEscaner.nextInt();
@@ -21,9 +22,13 @@ public class Rectangulo extends FiguraGeometrica {
         int a;
         a= b*h;
         
-        System.out.println("El area es:  ");
+        System.out.println("El area es:  "+a);
+        
+        }catch(Exception e){
+        System.out.println("Dato no valido");
+        }
 
-        return a;
+        return 0;
     }
 
     @Override
