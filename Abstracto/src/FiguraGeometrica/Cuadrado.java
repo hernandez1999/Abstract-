@@ -1,12 +1,24 @@
 
 package FiguraGeometrica;
 
+import java.util.Scanner;
+
 public class Cuadrado extends FiguraGeometrica {
 
+    Scanner miEscaner = new Scanner(System.in);
+
     @Override
-    String calcularArea() {
+    int calcularArea() {
+        int b;
+        System.out.println("Ingrese lado: ");
+        b= miEscaner.nextInt();
         
-            return "Area del Cuadrado";
+        int a;
+        a= b*b;
+        
+        System.out.println("El area es:  ");
+
+        return a;
     }
 
     @Override

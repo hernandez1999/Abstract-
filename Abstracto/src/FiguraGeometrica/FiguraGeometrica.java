@@ -4,7 +4,7 @@ package FiguraGeometrica;
 
 abstract public class FiguraGeometrica {
     
-  abstract String calcularArea();    
+  abstract int calcularArea();    
   
   abstract String calcularPerimetro();
     
