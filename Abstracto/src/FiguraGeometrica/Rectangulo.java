@@ -9,6 +9,7 @@ public class Rectangulo extends FiguraGeometrica {
 
     @Override
     int calcularArea() {
+        System.out.println(".: AREA RECTANGULO :. ");
         int b;
         System.out.println("Ingrese base: ");
         b= miEscaner.nextInt();
