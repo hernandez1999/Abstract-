@@ -1,38 +1,34 @@
 
 package FiguraGeometrica;
 
-import java.util.Scanner;
 
 public class Rectangulo extends FiguraGeometrica {
-    
-    Scanner miEscaner = new Scanner(System.in);
+
+    private float lado1;
+    private float lado2;
+    float area;
+    float perimetro;
 
     @Override
-    int calcularArea() {
-        System.out.println(".: AREA RECTANGULO :. ");
-        try{
-        int b;
-        System.out.println("Ingrese base: ");
-        b= miEscaner.nextInt();
-        
-        int h;
-        System.out.println("Ingrese base: ");
-        h= miEscaner.nextInt();
-        
-        int a;
-        a= b*h;
-        
-        System.out.println("El area es:  "+a);
-        
-        }catch(Exception e){
-        System.out.println("Dato no valido");
-        }
+    float calcularArea() {
 
-        return 0;
+        area = lado1*lado2;
+        return area;
+
     }
 
     @Override
-    String calcularPerimetro() {
-        return "Perimetro del Rectangulo";
+    float calcularPerimetro() {
+
+        perimetro = 2 * lado1 + 2 * lado2;
+        return perimetro;
+    }
+
+    void setLado1(float entrada) {
+        this.lado1=entrada;
+    }
+
+    void setLado2(float entrada) {
+        this.lado2=entrada;
     }
 }

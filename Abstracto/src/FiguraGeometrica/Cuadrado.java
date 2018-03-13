@@ -1,32 +1,37 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package FiguraGeometrica;
 
-import java.util.Scanner;
-
+/**
+ *
+ * @author Estudiantes
+ */
 public class Cuadrado extends FiguraGeometrica {
 
-    Scanner miEscaner = new Scanner(System.in);
+    private float lado;
+    float area;
+    float perimetro;
 
     @Override
-    int calcularArea() {
-        System.out.println(".: AREA CUADRADO :. ");
-        try{
-        int b;
-        System.out.println("Ingrese lado: ");
-        b= miEscaner.nextInt();     
-        int a;
-        a= b*b;
-        
-        System.out.println("El area es:  "+a);
+    float calcularArea() {
 
-        }catch(Exception e){
-            System.out.println("Dato no valido");     
-        }
-        return 0;
+        area = lado * lado;
+        return area;
+
     }
 
     @Override
-    String calcularPerimetro() {
-        return "Perimetro del Cuadrado";
+    float calcularPerimetro() {
+
+        perimetro = 4 * lado;
+        return perimetro;
+
     }
+
+    void setlado(float entrada) {
+    }
+
 }

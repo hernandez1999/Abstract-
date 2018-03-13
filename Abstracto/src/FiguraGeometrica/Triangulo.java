@@ -1,35 +1,34 @@
-
 package FiguraGeometrica;
 
-import java.util.Scanner;
-
 public class Triangulo extends FiguraGeometrica {
-    Scanner miEscaner = new Scanner(System.in);
+
+    private float base;
+    private float altura;
+    float area;
+    float perimetro;
 
     @Override
-    int calcularArea() {
-        System.out.println(".: AREA TRIANGULO :. ");
-        try{
-        int b;
-        System.out.println("Ingrese base: ");
-        b= miEscaner.nextInt();
-        
-        int h;
-        System.out.println("Ingrese altura ");
-        h= miEscaner.nextInt();
-        
-        int a;
-        a= (b*h)/2;
-        
-        System.out.println("El area es:  "+a);
-        }catch(Exception e){
-            System.out.println("Dato no valido ");
-        }
-        return 0;
+    float calcularArea() {
+
+        area = (base * altura) / 2;
+        return area;
+
     }
 
     @Override
-    String calcularPerimetro() {
-       return "Perimetro del Triangulo";  
+    float calcularPerimetro() {
+
+        perimetro = 3 * base;
+        return perimetro;
+
     }
+
+    public void setBase(float base) {
+        this.base = base;
+    }
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
 }
