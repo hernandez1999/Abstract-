@@ -22,7 +22,7 @@ public class Cuadrado extends FiguraGeometrica {
 
     }
 
-    void setLado(float numero) {
+    void setL(float numero) {
+        this.l = numero;
     }
-
 }

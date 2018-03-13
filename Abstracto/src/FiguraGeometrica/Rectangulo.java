@@ -22,11 +22,11 @@ public class Rectangulo extends FiguraGeometrica {
         return p;
     }
 
-    void setBase(float entrada) {
-        this.base = entrada;
+    void setBase(float numero) {
+        this.base = numero;
     }
 
-    void setLargo(float entrada) {
-        this.largo = entrada;
+    void setLargo(float numero) {
+        this.largo = numero;
     }
 }
