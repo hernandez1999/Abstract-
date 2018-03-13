@@ -1,6 +1,4 @@
-
 package FiguraGeometrica;
-
 
 public class Rectangulo extends FiguraGeometrica {
 
@@ -12,7 +10,7 @@ public class Rectangulo extends FiguraGeometrica {
     @Override
     float calcularArea() {
 
-        a = base*largo;
+        a = base * largo;
         return a;
 
     }
@@ -25,10 +23,10 @@ public class Rectangulo extends FiguraGeometrica {
     }
 
     void setBase(float entrada) {
-        this.base=entrada;
+        this.base = entrada;
     }
 
     void setLargo(float entrada) {
-        this.largo=entrada;
+        this.largo = entrada;
     }
 }

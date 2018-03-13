@@ -1,4 +1,3 @@
-
 package FiguraGeometrica;
 
 public class Cuadrado extends FiguraGeometrica {

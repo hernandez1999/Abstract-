@@ -1,9 +1,7 @@
-
 package FiguraGeometrica;
 
-
 public class Triangulo extends FiguraGeometrica {
-    
+
     private float b;
     private float h;
     float a;
@@ -11,18 +9,18 @@ public class Triangulo extends FiguraGeometrica {
 
     @Override
     float calcularArea() {
-        
-        a=(b*h)/2;
+
+        a = (b * h) / 2;
         return a;
 
     }
 
     @Override
     float calcularPerimetro() {
-        
-        p=3*b;
+
+        p = 3 * b;
         return p;
-        
+
     }
 
     public void setBase(float numero) {
@@ -33,6 +31,4 @@ public class Triangulo extends FiguraGeometrica {
         this.h = numero;
     }
 
-    
-    
 }
