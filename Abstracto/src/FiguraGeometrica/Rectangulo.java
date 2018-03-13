@@ -4,31 +4,31 @@ package FiguraGeometrica;
 
 public class Rectangulo extends FiguraGeometrica {
 
-    private float lado1;
-    private float lado2;
-    float area;
-    float perimetro;
+    private float base;
+    private float largo;
+    float a;
+    float p;
 
     @Override
     float calcularArea() {
 
-        area = lado1*lado2;
-        return area;
+        a = base*largo;
+        return a;
 
     }
 
     @Override
     float calcularPerimetro() {
 
-        perimetro = 2 * lado1 + 2 * lado2;
-        return perimetro;
+        p = 2 * base + 2 * largo;
+        return p;
     }
 
-    void setLado1(float entrada) {
-        this.lado1=entrada;
+    void setBase(float entrada) {
+        this.base=entrada;
     }
 
-    void setLado2(float entrada) {
-        this.lado2=entrada;
+    void setLargo(float entrada) {
+        this.largo=entrada;
     }
 }

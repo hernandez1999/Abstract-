@@ -1,34 +1,38 @@
+
 package FiguraGeometrica;
 
-public class Triangulo extends FiguraGeometrica {
 
-    private float base;
-    private float altura;
-    float area;
-    float perimetro;
+public class Triangulo extends FiguraGeometrica {
+    
+    private float b;
+    private float h;
+    float a;
+    float p;
 
     @Override
     float calcularArea() {
-
-        area = (base * altura) / 2;
-        return area;
+        
+        a=(b*h)/2;
+        return a;
 
     }
 
     @Override
     float calcularPerimetro() {
-
-        perimetro = 3 * base;
-        return perimetro;
-
+        
+        p=3*b;
+        return p;
+        
     }
 
-    public void setBase(float base) {
-        this.base = base;
+    public void setBase(float numero) {
+        this.b = numero;
     }
 
-    public void setAltura(float altura) {
-        this.altura = altura;
+    public void setAltura(float numero) {
+        this.h = numero;
     }
 
+    
+    
 }

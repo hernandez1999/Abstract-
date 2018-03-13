@@ -1,37 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package FiguraGeometrica;
 
-/**
- *
- * @author Estudiantes
- */
 public class Cuadrado extends FiguraGeometrica {
 
-    private float lado;
-    float area;
-    float perimetro;
+    private float l;
+    float a;
+    float p;
 
     @Override
     float calcularArea() {
 
-        area = lado * lado;
-        return area;
+        a = l * l;
+        return a;
 
     }
 
     @Override
     float calcularPerimetro() {
 
-        perimetro = 4 * lado;
-        return perimetro;
+        p = 4 * l;
+        return p;
 
     }
 
-    void setlado(float entrada) {
+    void setLado(float numero) {
     }
 
 }
