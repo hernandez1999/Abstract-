@@ -29,10 +29,10 @@ public class Calculo {
             System.out.println("Dato invalido");
         }
         
-        System.out.println("El perimetro del rectangulo es");
-        System.out.println(miRectangulo.calcularPerimetro());
         System.out.println("El area del rectangulo es");
         System.out.println(miRectangulo.calcularArea());
+        System.out.println("El perimetro del rectangulo es");
+        System.out.println(miRectangulo.calcularPerimetro());
 
         
         System.out.println(".: AREA DEL CUADRADO :.");        
@@ -44,10 +44,10 @@ public class Calculo {
             System.out.println("Dato invalido");
         }
         
-        System.out.println("El perimetro del cuadrado es");
-        System.out.println(miCuadrado.calcularPerimetro());
         System.out.println("El area del cuadrado es");
         System.out.println(miCuadrado.calcularArea());
+        System.out.println("El perimetro del cuadrado es");
+        System.out.println(miCuadrado.calcularPerimetro());
 
         
         System.out.println(".: AREA DEL TRIANGULO :.");        
@@ -67,9 +67,9 @@ public class Calculo {
         
         
         System.out.println("El perimetro del triangulo es");
-        System.out.println(miTriangulo.calcularPerimetro());
-        System.out.println("El area del triangulo es");
         System.out.println(miTriangulo.calcularArea());
+        System.out.println("El area del triangulo es");
+        System.out.println(miTriangulo.calcularPerimetro());
 
     }
 }
