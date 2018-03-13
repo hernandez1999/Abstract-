@@ -39,7 +39,7 @@ public class Calculo {
         System.out.println("Ingrese el lado");
         try{
         numero = miEscaner.nextFloat();
-        miCuadrado.setLado(numero);
+        miCuadrado.setL(numero);
         }catch(Exception e){
             System.out.println("Dato invalido");
         }
