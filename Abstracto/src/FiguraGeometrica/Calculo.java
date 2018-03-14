@@ -12,7 +12,7 @@ public class Calculo {
         Triangulo miTriangulo = new Triangulo();
         Cuadrado miCuadrado = new Cuadrado();
         
-        System.out.println(".: AREA DEL RECTANGULO :.");
+        System.out.println("                                                    .: AREA DEL RECTANGULO :.");
         System.out.println("Ingrese la base");
         try{
         numero = miEscaner.nextFloat();
@@ -35,7 +35,7 @@ public class Calculo {
         System.out.println(miRectangulo.calcularPerimetro());
 
         
-        System.out.println(".: AREA DEL CUADRADO :.");        
+        System.out.println("                                                    .: AREA DEL CUADRADO :.");        
         System.out.println("Ingrese el lado");
         try{
         numero = miEscaner.nextFloat();
@@ -50,7 +50,7 @@ public class Calculo {
         System.out.println(miCuadrado.calcularPerimetro());
 
         
-        System.out.println(".: AREA DEL TRIANGULO :.");        
+        System.out.println("                                                    .: AREA DEL TRIANGULO :.");        
         System.out.println("Ingrese base");
         try{
         numero = miEscaner.nextFloat();

@@ -9,18 +9,12 @@ public class Triangulo extends FiguraGeometrica {
 
     @Override
     float calcularArea() {
-
-        a = (b * h) / 2;
-        return a;
-
+        return (b * h) / 2;
     }
 
     @Override
     float calcularPerimetro() {
-
-        p = 3 * b;
-        return p;
-
+        return 3 * b;
     }
 
     public void setBase(float numero) {

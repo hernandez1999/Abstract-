@@ -4,22 +4,15 @@ public class Rectangulo extends FiguraGeometrica {
 
     private float base;
     private float largo;
-    float a;
-    float p;
 
     @Override
     float calcularArea() {
-
-        a = base * largo;
-        return a;
-
+        return base * largo;
     }
 
     @Override
     float calcularPerimetro() {
-
-        p = 2 * base + 2 * largo;
-        return p;
+        return 2 * base + 2 * largo;
     }
 
     void setBase(float numero) {

@@ -3,23 +3,15 @@ package FiguraGeometrica;
 public class Cuadrado extends FiguraGeometrica {
 
     private float l;
-    float a;
-    float p;
 
     @Override
     float calcularArea() {
-
-        a = l * l;
-        return a;
-
+        return l * l;
     }
 
     @Override
     float calcularPerimetro() {
-
-        p = 4 * l;
-        return p;
-
+        return 4 * l;
     }
 
     void setL(float numero) {
